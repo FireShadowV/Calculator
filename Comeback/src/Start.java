@@ -2,13 +2,16 @@ import java.util.Scanner;
 
 public class Start {
 	public static void main(String args[]) {
-		Scanner reader = new Scanner(System.in);
+		
+		
+		int OperationNumber;
+		
+		do {
+		
+		Scanner reader = new Scanner(System.in);	
 		System.out.println("Type a number to choose the operation : 1. Optelllen  2. Aftrekken  3. Vermenigvuldigen  4. Delen 5. Eind");
-		int OperationNumber = reader.nextInt();
-		
-		
-		
-		
+		OperationNumber = reader.nextInt();
+			
 		if(OperationNumber == 1) {
 			System.out.println("Enter the first number: ");
 			int myNumber = reader.nextInt();
@@ -45,14 +48,9 @@ public class Start {
 			System.out.println("The result is: " + result);
 			
 			
-		} else {
-			System.out.println("You failed a basic question");
-			
+		} 
 		
-		
-		}
-		
-		
+		}while(OperationNumber != 5);
 		
 		
 		
