@@ -47,6 +47,11 @@ public class Start {
 			double result4 = myNumber7 / myNumber8;
 			System.out.println("The result is: " + result4);
 			break;
+		case 5:
+			break;
+		default:
+			System.out.println("Nah fam, You gotta choose a number between 1 and 5;");
+			break;
 		
 		}
 		
@@ -55,7 +60,12 @@ public class Start {
 		
 		
 		
-		/*if(OperationNumber == 1) {
+		/*OLD CODE
+		 *VERSION 1 
+		 * 
+		 * 
+		 * 
+		 * if(OperationNumber == 1) {
 			System.out.println("Enter the first number: ");
 		    double myNumber = reader.nextInt();
 			System.out.println("Enter the second number: ");
