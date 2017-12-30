@@ -4,6 +4,9 @@ import java.math.BigDecimal;
 
 public class Start {
 	public static void main(String args[]) {
+		StartOOP Operation;
+		
+		Operation = new StartOOP();
 		
 		
 		int OperationNumber;
@@ -17,34 +20,34 @@ public class Start {
 		switch(OperationNumber) {
 		case 1:
 			System.out.println("Enter the first number: ");
-		    double myNumber = reader.nextInt();
+			double x = Operation.x = reader.nextInt();
 			System.out.println("Enter the second number: ");
-			double myNumber2 = reader.nextInt();
-			double result1 = myNumber + myNumber2;
+			double y = Operation.y = reader.nextInt();
+			double result1 = Operation.Addition(x,y);
 			System.out.println("The result is: " + result1);
 			break;
 		case 2:
 			System.out.println("Enter the first number: ");
-			double myNumber3 = reader.nextInt();
+			double x1 = Operation.x = reader.nextInt();
 			System.out.println("Enter the second number: ");
-			double myNumber4 = reader.nextInt();
-			double result2 = myNumber3 - myNumber4;
+			double y1 = Operation.y = reader.nextInt();
+			double result2 = Operation.Subtraction(x1,y1);
 			System.out.println("The result is: " + result2);
 			break;
 		case 3:
 			System.out.println("Enter the first number: ");
-			double myNumber5 = reader.nextInt();
+			double x2 = Operation.x = reader.nextInt();
 			System.out.println("Enter the second number: ");
-			double myNumber6 = reader.nextInt();
-			double result3 = myNumber5 * myNumber6;
+			double y2 = Operation.y = reader.nextInt();
+			double result3 = Operation.Multiplication(x2,y2);
 			System.out.println("The result is: " + result3);
 			break;
 		case 4:
 			System.out.println("Enter the first number: ");
-			double myNumber7 = reader.nextInt();
+			double x3 = Operation.x = reader.nextInt();
 			System.out.println("Enter the second number: ");
-			double myNumber8 = reader.nextInt();
-			double result4 = myNumber7 / myNumber8;
+			double y3 = Operation.y = reader.nextInt();
+			double result4 = Operation.Division(x3, y3);
 			System.out.println("The result is: " + result4);
 			break;
 		case 5:
